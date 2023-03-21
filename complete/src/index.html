@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="style_css/styles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="style_css/floom.css" type="text/css" media="screen" charset="utf-8" />
+	<script type="text/javascript" src="_js/ajax.js"></script>
+	<script type="text/javascript" src="_js/jscript.js"></script>
+    <!-- Primary Slide-->
+	<script type="text/javascript" charset="utf-8" src="_js/mootools-core-1.3-full-nocompat.js"></script>
+	<script type="text/javascript" charset="utf-8" src="_js/mootools-more.js"></script>
+	<script type="text/javascript" charset="utf-8" src="_js/floom.js"></script>
+    <!-- Hết Primary Slide-->
+      
+
+<!-- Script Primary Slide-->
+
+<script type="text/javascript" charset="utf-8">
+		window.addEvent('domready', function(e){
+			
+			// option 1		
+			var slides = [
+				{
+					image: 'halong1.jpg',
+					caption: 'Vịnh Hạ Long là một thắng cảnh nổi tiếng ở vùng biển Đông Bắc Việt Nam, cách thủ đô Hà Nội 165 km về phía Đông. Đây là một vịnh kín với diện tích 1.500km2,có bờ biển khúc khuỷu và cả một thế giới đảo với 1969 đảo lớn nhỏ. '
+				},
+				{
+					image: 'halong3.jpg',
+					caption: 'Vịnh Hạ Long được UNESCO công nhận là một trong những kỳ quan thiên nhiên cuả thế giới, là  danh thắng cảnh có sức hấp dẫn kỳ diệu, vì nó vừa hùng vĩ, vừa duyên dáng và thơ mộng. Cảnh sắc Hạ Long không bao giờ đơn điệu, luôn mới ở mọi góc độ quan sát và thay đổi theo thời gian khiến cho du khách từ ngạc nhiên say đắm đến ngỡ ngàng bối rối. Đến thăm Hạ Long vào bất kỳ mùa nào trong năm, du khách cũng tìm thấy được vẻ đẹp riêng đầy quyến rũ đến mê hồn của nó.'
+				},
+				{
+					image: 'hangsungsot.jpg',
+					caption: 'HANG SỬNG SỐT - Hang có tên như vậy là do khi ta đi vào thăm quan trong hang thấy hang có diện tích trong lòng rất nhỏ... nhưng khi du khách lách qua một khe đá hẹp để tiến vào trong thì ai là du khách thăm quan cũng phải ồ lên... cảm nhận cái đẹp và lòng hang được mở rộng ra rất nhiều.... đẹp... đẹp... đẹp, gây ấn tượng mạnh nên du khách chính là người đặt tên cho động cái tên grotte de la surprise (hang động của sự sửng sốt)'
+				},
+				{
+					image: 'hontrongmai.jpg',
+					caption: 'HÒN TRỐNG MÁI - Hòn Trống Mái nằm ở phía tây nam vịnh Hạ Long, cách cảng tàu du lịch 5 km, gần hòn Đỉnh Hương. Giữa một vùng biển nước bao la, hai con gà một con trống và một con mái hiện lên ngạo nghễ trên mặt biển xanh. Lúc bình minh lên từ phía xa chiếu ánh sáng rực rỡ nhuộm đỏ đôi gà khổng lồ bên nhau trên sóng nước mênh mông. Từ mặt nước, chiều cao mỗi con tới hơn chục mét. Tấm thân khổng lồ đứng trên cái chân thót lại, thế chênh vênh tưởng chừng chỉ vài con sóng vỗ mạnh, cả khối đá nặng ấy có thể đổ ập xuống bất cứ lúc nào.'
+				},
+				{
+					image: 'halong2.jpg',
+					caption: 'Vịnh Hạ Long là một trong nhưng di sản thiên nhiên thế giới. Mỗi người khi đến đây đều cảm nhận được cái đẹp, sự huyền bí của Vịnh hạ long. Vịnh Hạ Long là một đề tài muôn thủa cho tất cả những ai muốn khám phá Hạ Long qua mỗi bức ảnh...'
+				}
+				
+			];
+			
+			// option 2
+			// var slides = $$('#blinds img');
+
+			$('blinds').floom(slides, {
+				slidesBase: 'images/slides/',
+				sliceFxIn: {
+					left: [20, 0]
+				}
+			});
+			
+		});
+	</script>
+    <!-- Hết script Primary Slide-->
+    
+    <title>Project HaLong Travel</title>
+</head>
+
+<body onload=goforit();>
+	<div id="wrapper">
+    	<div id="header">
+        	<div class="logo">
+            	<a href="index.html" title="Hạ Long Travel"><img src="images/logo.png" alt="" /></a>
+            </div>
+            <div class="search_input_hotline">
+            	<p class="hotline">
+                Hotline: (04)-22334455
+                </p>
+                
+                	<form id="testform" method="post" action="#">
+                    	<input type="text" class="clear_search" name="search" value="Nhập vào từ khóa" />
+                        <input type="submit" name="Search" value="Tìm kiếm" />
+                    </form>
+                
+            </div>
+        </div><!-- End header-->
+        <!---------------------------------------------->
+        <div id="primary_nav">
+        	<div id="primary_nav_left"></div>
+            <div id="primary_nav_right">
+            	<div id="primary_nav_center">
+                	<ul id="nav">
+						<li class="top"><a href="index.html" class="top_link" title="Trang chủ"><span>Trang chủ</span></a></li>
+						<li class="top"><a href="#" onclick="loadXMLDoc('content_pages/intro.html', 'dyn_content')" class="top_link" title="Giới thiệu"><span class="down">Giới thiệu</span></a>
+                        	<ul class="sub">
+								<li><a href="#" onclick="loadXMLDoc('content_pages/truyenthuyet.html', 'dyn_content')" title="Truyền thuyết">Truyền thuyết</a></li>
+								<li><a href="#" onclick="loadXMLDoc('content_pages/moitruong-khihau.html', 'dyn_content')" title="Môi trường - Khí hậu">Môi trường - Khí hậu</a></li>
+								<li><a href="#" onclick="loadXMLDoc('content_pages/dieukientunhienxahoi.html', 'dyn_content')" title="Điều kiện tự nhiên">Điều kiện tự nhiên</a></li>
+							</ul>
+                        </li>
+						<li class="top"><a href="#" onclick="loadXMLDoc('content_pages/tintuc.html', 'dyn_content')" class="top_link" title="Tin tức"><span class="down">Tin tức</span></a>
+                        	<ul class="sub">
+								<li><a href="#" onclick="loadXMLDoc('content_pages/dulichtrongnuoc.html', 'dyn_content')" title="Du lịch trong nước">Du lịch trong nước</a></li>
+								<li><a href="#" onclick="loadXMLDoc('content_pages/dulichnuocngoai.html', 'dyn_content')" title="Du lịch nước ngoài">Du lịch nước ngoài</a></li>
+							</ul>
+                        </li>
+						<li class="top"><a class="top_link" title="Vui lòng chọn SubMenu"><span class="down">Điểm du lịch</span></a>
+							<ul class="sub">
+								<li><a href="#" onclick="loadXMLDoc('content_pages/DongMeCung.html', 'dyn_content')" title="Động Mê Cung">Động Mê Cung</a></li>
+								<li><a href="#" onclick="loadXMLDoc('content_pages/DongKimQuy.html', 'dyn_content')" title="Động Kim Quy">Động Kim Quy</a></li>
+								<li><a href="#" onclick="loadXMLDoc('content_pages/BaitamTuanChau.html', 'dyn_content')" title="Bãi tắm Tuần Châu">Bãi tắm Tuần Châu</a></li>
+								<li><a href="#" onclick="loadXMLDoc('content_pages/DanhthangMongCai-TraCo.html', 'dyn_content')" title="Danh thắng Móng Cái">Danh thắng Móng Cái</a></li>
+							</ul>
+						</li>
+						<li class="top"><a class="top_link" title="Vui lòng chọn SubMenu"><span class="down">Khách sạn Hạ Long</span></a>
+                        	<ul class="sub">
+								<li><a href="#" onclick="loadXMLDoc('content_pages/resort.html', 'dyn_content')" title="Resort">Resort</a></li>
+								<li><a href="#" onclick="loadXMLDoc('content_pages/Khachsan3sao.html', 'dyn_content')" title="Khách sạn 3 sao">Khách sạn 3 sao</a></li>
+								<li><a href="#" onclick="loadXMLDoc('content_pages/Khachsan4sao.html', 'dyn_content')" title="Khách sạn 4 sao">Khách sạn 4 sao</a></li>
+							</ul>
+                        </li>
+						<li class="top"><a class="top_link" title="Vui lòng chọn SubMenu"><span class="down">Nhà hàng Hạ Long</span></a>
+                        	<ul class="sub">
+								<li><a href="#" onclick="loadXMLDoc('content_pages/nhahangcongu.html', 'dyn_content')" title="Cổ ngư">Cổ ngư</a></li>
+								<li><a href="#" onclick="loadXMLDoc('content_pages/nhahangsaomai.html', 'dyn_content')" title="Sao mai">Sao mai</a></li>
+								<li><a href="#" onclick="loadXMLDoc('content_pages/nhahangbienxanh.html', 'dyn_content')" title="Biển xanh">Biển xanh</a></li>
+                                <li><a href="#" onclick="loadXMLDoc('content_pages/nhahangbamien.html', 'dyn_content')" title="Ba miền Hạ Long">Ba miền Hạ Long</a></li>
+							</ul>
+                        </li>
+    					<li class="top"><a class="top_link" title="Vui lòng chọn SubMenu"><span class="down">Ẩm thực Hạ Long</span></a>
+                        	<ul class="sub">
+								<li><a href="#" onclick="loadXMLDoc('content_pages/goingan.html', 'dyn_content')" title="Gỏi ngán">Gỏi ngán</a></li>
+								<li><a href="#" onclick="loadXMLDoc('content_pages/tuhai.html', 'dyn_content')" title="Tu hài">Tu hài</a></li>
+								<li><a href="#" onclick="loadXMLDoc('content_pages/muchapoi.html', 'dyn_content')" title="Mực hấp ổi">Mực hấp ổi</a></li>
+                                <li><a href="#" onclick="loadXMLDoc('content_pages/tomkhobocnon.html', 'dyn_content')" title="Tôm khô bóc nõn">Tôm khô bóc nõn</a></li>
+                                <li><a href="#" onclick="loadXMLDoc('content_pages/cabagai.html', 'dyn_content')" title="Cá Ba gai Hạ Long">Cá Ba gai Hạ Long</a></li>
+							</ul>
+                        </li>
+                        <li class="top"><a href="#" onclick="loadXMLDoc('content_pages/lienhe.html', 'dyn_content')" class="top_link" title="Liên hệ"><span>Liên hệ</span></a></li>
+                        <li class="top"><a href="#" onclick="loadXMLDoc('content_pages/sitemap.html', 'dyn_content')" class="top_link" title="Sơ đồ website"><span>Sơ đồ website</span></a></li>
+					</ul>
+                </div>
+            </div>
+        </div><!-- End primary_nav-->
+        
+        <div id="sys_clock">
+        	<p id=clock ></p>
+        </div><!--Hết clock-->
+        
+        <div id="primary_slide_show">
+        	<div id="blinds-cont">
+				<div id="blinds">
+				</div>
+			</div>
+        </div><!-- End Slide Show-->
+        
+        <div id="content_pages" class="clearfix">
+        	<div id="content_left">
+            	<p class="video_box">
+                	<iframe width="300" height="215" src="http://www.youtube.com/embed/rxgpaTxhVVs" frameborder="0" allowfullscreen></iframe>
+                </p>
+            	<p class="ad">
+                	<a href="#" title=""><img src="images/images_ad/img_ad_left_1.png" alt="" /></a>
+                </p>
+                <p class="ad">
+                	<a href="#" title=""><img src="images/images_ad/img_ad_left_2.png" alt="" /></a>
+                </p>
+                <p class="support_online">
+                    	Hỗ trợ trực tuyến: 
+                </p>
+                <p class="support_online">
+                    <a href="ymsgr:sendim?halongtravel_support1" /><img src="http://presence.msg.yahoo.com/online?u=halongtravel_support1&m=g&t=2&l=us" border=0 /></a>
+                </p>
+                <p class="support_online">
+                    <a href="ymsgr:sendim?halongtravel_support2" /><img src="http://presence.msg.yahoo.com/online?u=halongtravel_support2&m=g&t=2&l=us" border=0 /></a>
+                </p>
+                <p class="ad">
+                	<img src="images/images_ad/QUANGCAO.png" title="Liên hệ Quảng cáo" />
+                </p>
+            </div><!--End content left-->
+            
+            <div id="dyn_content">
+            	<p class="images_main_content">
+                	<img src="images/img_ad_center.png" alt="" />
+                </p>
+                <p class="main_content">
+                	Vịnh Hạ Long nằm ở vùng Đông Bắc Việt Nam, là một phần bờ tây vịnh Bắc Bộ, bao gồm vùng biển của thành phố Hạ Long, thị xã Cẩm Phả và một phần của huyện đảo Vân Đồn. Phía tây nam vịnh giáp đảo Cát Bà, phía tây giáp đất liền với đường bờ biển dài 120 km, được giới hạn trong các tọa độ từ 1060 58' - 1070 22' kinh độ Đông và 200 45' - 200 50' vĩ độ bắc, với tổng diện tích 1553 km2 gồm 1969 hòn đảo lớn nhỏ, trong đó 989 đảo có tên và 980 đảo chưa có tên.
+                 </p>
+                 <p class="main_content">
+					Đảo ở Hạ Long có hai dạng là đảo đá vôi và đảo phiến thạch, tập trung ở hai vùng chính là vùng phía đông nam vịnh Bái Tử Long và vùng phía tây nam vịnh Hạ Long. Đây là hình ảnh cổ xưa nhất của địa hình có tuổi kiến tạo địa chất từ 250 - 280 triệu năm, là kết quả của quá trình vận động nâng lên, hạ xuống nhiều lần từ lục địa thành trũng biển. Quá trình Caxto bào mòn, phong hoá gần như hoàn toàn tạo ra một Hạ Long độc nhất vô nhị trên thế giới. Trong một diện tích không lớn, hàng ngàn đảo đá với muôn hình, dáng vẻ khác nhau như những viên ngọc bích long lanh được đính lên chiếc khăn voan xanh biếc của nàng thiếu nữ. Vùng tập trung dày đặc các đảo đá có phong cảnh ngoạn mục và nhiều hang động đẹp nổi tiếng là vùng trung tâm Di sản Thiên nhiên vịnh Hạ Long, bao gồm vịnh Hạ Long và một phần vịnh Bái Tử Long.
+				</p>
+                <p class="main_content">
+					Vùng Di sản được Thế giới công nhận có diện tích 434 km2 bao gồm 775 đảo, như một hình tam giác với ba đỉnh là đảo Đầu Gỗ (phía tây), hồ Ba Hầm (phía nam) và đảo Cống Tây (phía đông). Vùng kế bên là khu vực đệm và di tích danh thắng quốc gia được bộ Văn hoá Thông tin xếp hạng năm 1962.
+                </p>
+                <p class="main_content">
+                	Từ trên cao nhìn xuống, vịnh Hạ Long như một bức tranh thuỷ mặc khổng lồ vô cùng sống động. Đó là những tác phẩm tạo hình tuyệt mỹ, tài hoa của tạo hoá, của thiên nhiên biến hàng ngàn đảo đá vô tri tĩnh lặng kia trở nên những tác phẩm điêu khắc, hội họa hoàn mỹ với muôn hình dáng vẻ yêu kiều, vừa rất quen thuộc vừa như xa lạ với con người. Hàng ngàn đảo đá nhấp nhô trên sóng nước lung linh huyền ảo, vừa khoẻ khoắn hoành tráng nhưng cũng rất mềm mại duyên dáng, sống động. Đi giữa Hạ Long với muôn ngàn đảo đá, ta ngỡ như lạc vào một thế giới cổ tích bị hoá đá nơi đây. Đảo thì giống hình ai đó đang hướng về đất liền - hòn Đầu Người; đảo thì giống như một con rồng đang bay lượn trên mặt nước - Hòn Rồng; đảo thì lại giống như một ông lão đang ngồi câu cá - hòn Lã Vọng; và kia hai cánh buồm nâu lực lưỡng đang rẽ sóng nước ra khơi - hòn Cánh Buồm; rồi hai con gà đang âu yếm vờn nhau trên sóng nước - hòn Trống Mái; đứng giữa biển nước bao la một lư hương khổng lồ như một vật cúng tế trời đất - hòn Lư Hương... Tất cả đều rất thực, thực đến kinh ngạc. Những đảo đá diệu kỳ ấy biến hoá khôn lường theo thời gian và góc nhìn. Tới đây ta mới nhận ra tất cả chúng không phải là những hòn đảo vô tri tĩnh lặng mà như có hồn và đều sống động.
+				</p>
+                <p class="main_content">
+					Tiềm ẩn trong lòng các đảo đá ấy là những hang động tuyệt đẹp như động Thiên Cung, hang Đầu Gỗ, động Sửng Sốt, hang Trinh Nữ, động Tam Cung... Đó thực sự là những lâu đài của tạo hoá giữa chốn trần gian. Từ xưa, Hạ Long đã được đại thi hào dân tộc Nguyễn Trãi mệnh danh là "kỳ quan đất dựng giữa trời cao". Bao tao nhân mặc khách từ khắp năm châu khi đặt chân đến đây đều cảm thấy bàng hoàng trước vẻ đẹp kỳ vĩ của Hạ Long, dường như họ đều cảm thấy lúng túng và bất lực bởi vốn từ hiện có vẫn chưa đủ để mô tả vẻ đẹp của Hạ Long.
+				</p>
+                <p class="main_content">
+					Vịnh Hạ Long cũng là nơi gắn liền với những trang sử vẻ vang, hào hùng của dân tộc Việt Nam với những địa danh nổi tiếng như Vân Đồn - nơi có thương cảng cổ sầm uất vào thế kỷ thứ 12; có núi Bài Thơ lịch sử; cách đó không xa dòng sông Bạch Đằng - là chứng tích của hai trận thuỷ chiến lẫy lừng của các thế hệ ông cha chống giặc ngoại xâm. Không chỉ có vậy, Hạ Long còn là một trong những cái nôi của con người với nền Văn hoá Hạ Long huy hoàng thời Hậu kỳ đồ đá mới tại những địa danh khảo cổ học nổi tiếng như Đồng Mang, Xích Thổ, Soi Nhụ, Thoi Giếng...
+				</p>
+                <p class="main_content">
+					Hạ Long cũng là nơi tập trung đa dạng sinh học cao với những hệ sinh thái điển hình như hệ sinh thái rừng ngập mặn, hệ sinh thái rạn san hô, hệ sinh thái tùng áng, hệ sinh thái rừng cây nhiệt đới... Với hàng ngàn loài động thực vật vô cùng phong phú, đa dạng như tôm, cá, mực... Có những loài đặc biệt quý hiếm chỉ có ở nơi đây.
+				</p>
+                <p class="main_content">
+					Với những giá trị đặc biệt như vậy, ngày 17/12/1994, trong phiên họp lần thứ 18 của Hội đồng Di sản Thế giới thuộc UNESCO tổ chức tại Thái Lan, vịnh Hạ Long chính thức được công nhận là Di sản Thiên nhiên thế giới. Năm 2000, vịnh Hạ Long được UNESCO công nhận lần thứ hai Di Sản thế giới bởi giá trị địa chất, địa mạo. Điều đó đã khẳng định giá trị ngoại hạng mang tính toàn cầu của vịnh Hạ Long. 
+				</p>
+            </div><!--End dynamic content-->
+        </div><!-- End content pages-->
+        
+        <div id="secondary_slide_show">
+        	<marquee class="border_slide" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><img src="images/second_slide/01.jpg" /><img src="images/second_slide/02.jpg" /><img src="images/second_slide/03.jpg" /><img src="images/second_slide/04.jpg" /><img src="images/second_slide/05.jpg" /></marquee>
+        </div><!-- End Secondary Slide Show-->
+        <div class="xoa"></div>
+        <div id="footer">
+        	<div id="secondary_nav">
+            	<ul>
+                	<li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Sơ đồ Website</a></li>
+                </ul>
+        	</div>
+            <div class="xoa"></div>
+            <div id="bottom_footer">
+            	<div class="info">
+            		<h4>Bản quyền 2011 của HaLongtravel.com</h4>
+					<h5>Địa chỉ: 222/111 Hạ Long Việt Nam</h5>
+					<h5>Điện thoại: 033 222 222 222 - Fax: 033 333 333 333</h5>
+					<h5>Email: <a href="mailto:info@email.com">info@email.com</a></h5>
+            	</div><!--End info-->
+            	<div class="info">
+            		<h4>Chi nhánh Hà Nội</h4>
+					<h5>Địa chỉ: 222/111 Quận Hai Bà Trưng - Hà Nội</h5>
+					<h5>Điện thoại: 04 222 222 222 - Fax: 04 333 333 333</h5>
+					<h5>Email: <a href="mailto:info@email.com">info@email.com</a></h5>
+            	</div><!--End info-->
+            	<div class="info">
+            		<h4>Chi nhánh Tp Hồ Chí Minh</h4>
+					<h5>Địa chỉ: 222/111 Quận 1 - Tp Hồ Chí Minh</h5>
+					<h5>Điện thoại: 08 222 222 222 - Fax: 08 333 333 333</h5>
+					<h5>Email: <a href="mailto:info@email.com">info@email.com</a></h5>
+            	</div><!--End info-->
+        </div>
+        </div>   
+        
+        
+        
+        
+    </div><!--Hết wrapper-->
+    
+</body>
+</html>

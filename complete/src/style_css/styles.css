@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+*{padding: 0px;
+margin:0px;
+}
+a{
+	text-decoration:none;
+	color:#FFF;
+	font-weight:700;
+	font-size:8pt;
+}
+img{
+	border:0px;
+	vertical-align:middle;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.xoa{
+	clear:both;
+}
+body{
+	background:#fefefe;
+	font-family:tahoma, arial, "times New Roman";
+	font-size:10pt;
+	margin:auto;
+}
+
+#wrapper{
+	width:949px;
+	margin:auto;
+}
+/*CSS Header*/
+#header{
+	margin-top:5px;
+	height:150px;
+	background: url(../images/nqx_bg_top2.png) no-repeat center;
+	position:relative;
+}
+#header .logo{
+	background:transparent;
+	padding-left:20px;
+	padding-top:70px;
+}
+#header .search_input_hotline{
+	position:absolute;
+	right:15px;
+	top:90px;
+}
+#header p.hotline{
+	font-size:18px;
+	font-weight:bold;
+	color:#0c6aa0;
+	padding-bottom:10px;
+}
+
+/*CSS navigator*/
+#primary_nav{
+	background:url(../images/nqx_bg_content.png) repeat-y center;
+}
+
+#primary_nav_center{
+	background:url(../images/bg_nav.png) repeat-x;
+	margin-left:8px;
+	height:38px;
+	line-height:34px;
+	margin-right:8px;
+}
+
+/*CSS primary navigator*/
+#nav li.top {
+	/*background:url(../images/nav_space.png) no-repeat right;*/
+	display:block; 
+	float:left; 
+	height:38px;}
+#nav li a.top_link {
+	display:block; 
+	float:left;  
+	line-height:34px; 
+	color:#fff; 
+	text-decoration:none; 
+	font-size:8pt; 
+	font-weight:bold; 
+	padding:0 8px 0 8px; 
+	cursor:pointer;
+	}
+#nav li a.top_link span {
+	float:left; 
+	display:block; 
+	padding:0 8px 0 8px; 
+	height:38px; 
+	}
+#nav li a.top_link span.down {
+	float:left; 
+	display:block; 
+	padding:0 8px 0 8px; 
+	height:38px; 
+	}
+
+#nav li:hover a.top_link {
+	color:#fff; 
+	}
+#nav li:hover a.top_link span {	}
+#nav li:hover a.top_link span.down {
+	}
+
+/* Default list styling */
+
+#nav li:hover {
+	background:url(../images/pri_nav_active.png) repeat-x 50%;
+	position:relative; 
+	z-index:200;
+	}
+
+#nav li:hover ul.sub{
+	left:15px; 
+	top:35px; 
+	background: #1862b8; 
+	padding:1px; 
+	/*border:1px solid #fff;*/
+	white-space:nowrap; 
+	width:140px; 
+	height:auto; 
+	z-index:300;
+	}
+#nav li:hover ul.sub li{
+	padding: 5px;
+	border-bottom:1px solid #fff;
+	display:block; 
+	height:18px; 
+	position:relative; 
+	float:left; 
+	width:130px; 
+	font-weight:bold;
+	}
+#nav li:hover ul.sub li a{
+	display:block; 
+	font-size:8pt; 
+	height:18px; 
+	width:120px; 
+	line-height:18px; 
+	text-indent:5px; 
+	color:#fff; 
+	text-decoration:none;
+	}
+
+#nav li:hover ul.sub li a:hover{
+	color:#f1a20a; 
+	}
+
+#nav li:hover li:hover ul,
+#nav li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover li:hover ul{
+	left:90px; top:-4px; 
+	background: #bbd37e; 
+	padding:3px; 
+	border:1px solid #5c731e; 
+	white-space:nowrap; 
+	width:120px; 
+	z-index:400; 
+	height:auto;
+	}
+
+#nav ul, 
+#nav li:hover ul ul,
+#nav li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover li:hover ul ul{
+	position:absolute; 
+	left:-9999px; 
+	top:-9999px; 
+	width:0; 
+	height:0; 
+	margin:0; 
+	padding:0; 
+	list-style:none;
+	}
+
+#nav li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover li:hover li:hover a.fly{
+	background:#6a812c url(arrow_over.gif) 80px 6px no-repeat; 
+	color:#fff; 
+	border-color:#fff;
+	} 
+
+#nav li:hover li:hover li a.fly,
+#nav li:hover li:hover li:hover li a.fly,
+#nav li:hover li:hover li:hover li:hover li a.fly{
+	background:#bbd37e url(arrow.gif) 80px 6px no-repeat; 
+	color:#000; 
+	border-color:#bbd37e;
+	} 
+/*Hết CSS navigator*/
+
+/*CSS Đồng hồ hệ thống*/
+#sys_clock{
+	background:url(../images/nqx_bg_content.png) repeat-y center;
+	text-align:right;
+	padding: 5px 15px;
+}
+
+/*CSS Slide Show Banner*/
+#primary_slide_show{
+	background:url(../images/nqx_bg_content.png) repeat-y center;
+	padding:10px 0px;
+}
+
+/*Hết CSS primary slideshow*/
+#content_pages{
+	background:url(../images/nqx_bg_content.png) repeat-y center;
+	padding-bottom:30px;
+}
+#content_left{
+	width:320px;
+	padding-left:10px;
+	float:left;
+}
+#content_left p.ad{
+	text-align:center;
+	padding:5px 0;
+}
+#content_left p.video_box{
+	text-align: center;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+#content_left p.support_online{
+	font-weight:bold;
+	color:#0c6aa0;
+	text-align:center;
+	padding-top: 5px;
+}
+#content_left p.support_online a{
+	color:#0c6aa0;
+}
+#dyn_content{
+	margin-left:330px;
+	padding-right:15px;
+}
+#dyn_content .images_main_content{
+	text-align:center;
+	padding:5px 0;
+}
+#dyn_content .main_content{
+	text-indent:30px;
+	text-align:justify;
+	padding-bottom:5px;
+}
+#dyn_content p.read_more{
+	text-align:right;
+}
+#dyn_content .read_more a{
+	color:#0c6aa0;
+}
+.fix_content{
+	font-weight:bold;
+	color:#0c6aa0;
+	padding:5px 0;
+	text-indent:30px;
+}
+p.fix_content{
+	text-transform:uppercase;
+}
+/*Hết CSS content*/
+#secondary_slide_show{
+	background:url(../images/nqx_bg_content.png) repeat-y center;
+	height:150px;
+	padding: 5px 8px;
+}
+#secondary_slide_show .border_slide{
+	border-top: 1px solid #0c6aa0;
+	border-bottom:1px solid #0c6aa0;
+	background:#FFF;
+	padding:2px 0;
+}
+/*CSS footer*/
+#footer{
+	background:url(../images/nqx_bg_bottom.png) no-repeat center top;
+	height: 200px;
+}
+#bottom_footer{
+	background:#00F;
+}
+#secondary_nav{
+	margin-top:10px;
+	padding-left:15px;
+	float:left;
+}
+#secondary_nav ul{
+	list-style:none;
+	display:block;
+	float:left;
+}
+#secondary_nav li{
+	padding: 15px 10px;
+	float:left;
+}
+#secondary_nav a{
+	font-size:13px;
+	color:#0c6aa0;
+}
+
+.info{
+	background:transparent;
+	width:31%;
+	padding-left:20px;
+	float:left;
+}
+.info h4, .info h5{
+	color:#555655;
+}
+.info h5 a{
+	color:#0c6aa0;
+}
+
+
